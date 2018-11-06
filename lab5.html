@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body
+        {
+            background-color: black;
+            margin-top: 30%;
+        }
+       #main
+        {
+            max-width:800px;
+            margin: auto;
+        }
+        .article
+        {
+            border: 1px solid #E8E8E8;
+            border-radius: 12px;
+            width: auto;
+            margin: 0 0 10px 0;
+            padding:10px 12px;
+            background-color: #ffffff;
+        }
+        .article-name h1
+        {
+            font-size: 24px;
+            font-family: 'Bangers',cursive;
+            letter-spacing:3px;
+            margin-bottom: 0;
+        }
+        .article-opt
+        {
+            border-radius: 50%;
+            float:right;
+            height: 24px;
+            text-align: center;
+            width:24px;
+            line-height: 3.5;
+        }
+        .article-opt:hover
+        {
+            color: red;
+        }
+        .article-overview a 
+        {
+            text-decoration: none;
+        }
+        .article-overview a:hover
+        {
+         text-decoration: underline;
+        }
+        .pipe
+        {
+            color: #ccc;
+            margin: 0 10px;
+        }
+        .text-muted
+        {
+            opacity: 0.5;
+        }
+        .text-small
+        {
+            font-size: 85%;
+        }
+        .lister-list
+        {
+            width:100%;
+            margin-top: 30px;
+        }
+        .lister-list > .lister-item
+        {
+            background-color: #f6f6f5;
+            margin-bottom: 3px;
+            padding: 10px 10px 20px;
+        }
+        .lister-list > .lister-item > .lister-item-image
+        {
+            display: inline-block;
+        }
+        .lister-list > .lister-item > .lister-item-image img
+        {
+            box-shadow: 3px 2px 3px 1px rgba(0,0,0,0.8);
+            height: 200px;
+            width: 120px;
+        }
+        .lister-list > .lister-item > .lister-item-content
+        {
+            width: 80%;
+            float:right;
+        }
+        .lister-list > .lister-item > .lister-item-content > h3
+        {
+            margin: 0 0 0.5em;
+            padding: 0;
+        }
+        .lister-list > .lister-item > .lister-item-content > h3 > a
+        {
+            color: #70579D;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Bangers', cursive;
+            letter-spacing: 3px;
+        }
+         .lister-list > .lister-item > .lister-item-content > h3 > .lister-item-year
+        {
+            font-size: small;
+            font-weight: normal;
+        }
+         .lister-list > .lister-item > .lister-item-content > h3 > .lister-item-summary
+        {
+            line-height: 140%;
+            font-size: 13px;
+        }
+         .lister-list > .lister-item > .lister-item-content > h3 > .lister-item-summary::first-letter
+        {
+            color: #7057D;
+            font-size: 1.3em;
+        }
+        p.lister-item-summary::selection
+        {
+            color:yellow;
+            background: red;
+        }
+        .lister-list >.lister-item-content a
+        {
+            text-decoration: none;
+            color: #70579D;
+        }
+        @keyframes example {
+        from {background-color: red;}
+        to {background-color: purple;}
+        }
+        .animate
+        {
+            animation-name: example;
+        animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+    
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+        </head>
+    <body>
+        <div id="main">
+        <div class="article">
+            <div class="article-opt">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <div class="article-name">
+                <h1> Favorite Movies </h1>
+            </div>
+            <span class="article-overview">
+                by <a href="https://github.com/your_username">Haseeb Manzoor  </a> <span class="pipe"> | </span>
+                <span class="text-muted"> <i class="fas fa-lock"></i> Private </span>
+            </span>
+            <div class="lister-list">
+                <div class="lister-item">
+                    <div class="lister-item-image">
+                        <a href="#">
+                            <img src="inception.jpg" alt="your_movie_name">
+                        </a>
+                    </div>
+                    <div class="lister-item-content">
+                        <h3 class="lister-item-header">
+                            <a href="#">Inception</a>
+                            <span class="lister-item-year text-muted">(2015)</span>
+                        </h3>
+                        <p class="text-muted text-small">
+                            <i class="fas fa-star"></i> 4
+                            <span class="pipe">|</span>
+                            <span><i class="fas fa-clock"></i> 160 min</span>
+                            <span class="pipe">|</span>
+                            <span><i class="fas fa-film"></i> Genre1, Genre2, Genre3 </span>
+                        </p>
+                        <p class="lister-item-summary">
+                           <div class="w3-container w3-purple animate">
+                               This is a very great movie and a block blusters of last few years. Its shows the 
+                               work of incredible people in a society that work hard and by great efforts.
+                               
+                        </div>
+                        </p>
+                        
+                        <p class="text-muted text-small">
+                            Director:
+                            <a href="#">Director Name</a>
+                            <span class="pipe">|</span>
+                            Stars:
+                            <a href="#">Star1</a>,
+                            <a href="#">Star2</a>,
+                            <a href="#">Star3</a>,
+                            <a href="#">Star4</a>
+                        </p>
+                        <p class="text-muted text-small">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>000000</span>
+                            <span class="pipe">|</span>
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>000.00M</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="lister-item">
+                    <div class="lister-item-image">
+                        <a href="#">
+                            <img src="separation.jpg" alt="your_movie_name">
+                        </a>
+                    </div>
+                    <div class="lister-item-content">
+                        <h3 class="lister-item-header">
+                            <a href="#">A Separation</a>
+                            <span class="lister-item-year text-muted">(2017)</span>
+                        </h3>
+                        <p class="text-muted text-small">
+                            <i class="fas fa-star"></i> 3.5
+                            <span class="pipe">|</span>
+                            <span><i class="fas fa-clock"></i> 120 min</span>
+                            <span class="pipe">|</span>
+                            <span><i class="fas fa-film"></i> Genre1, Genre2, Genre3 </span>
+                        </p>
+                        <p class="lister-item-summary">
+                           <div class="w3-container w3-purple animate">
+                               This is a very great movie and a block blusters of last few years. Its shows the 
+                               work of incredible people in a society that work hard and by great efforts.
+                               
+                        </div>
+                        </p>
+                        <p class="text-muted text-small">
+                            Director:
+                            <a href="#">Director Name</a>
+                            <span class="pipe">|</span>
+                            Stars:
+                            <a href="#">Star1</a>,
+                            <a href="#">Star2</a>,
+                            <a href="#">Star3</a>,
+                            <a href="#">Star4</a>
+                        </p>
+                        <p class="text-muted text-small">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>000000</span>
+                            <span class="pipe">|</span>
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>000.00M</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>     
+    
+</html>
