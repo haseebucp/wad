@@ -1,0 +1,70 @@
+var questions =
+    [
+        {
+    question : "When a user views a page containing a JavaScript program, which machine actually executes the script?",
+    choices : [ "The User's machine running a Web browser",
+        "The Web server",
+        "A central machine deep within Netscape's corporate offices",
+        "None of the above"],
+    correctAnswer : 0
+        },
+        {
+    question : "Which of the following can't be done with client-side JavaScript?",
+    choices : [ "Validating a form",
+        "Sending a form's contents by email",
+        "Storing the form's contents to a database file on the server",
+        "None of the above"],
+    correctAnswer : 2
+        },
+        {
+    question : "Using _______ statement is how you test for a specific condition",
+    choices : [ "select",
+        "if",
+        "for",
+        "none of the above"],
+    correctAnswer : 1
+}];
+
+var currentQuestion = document.getElementById('question').innerHTML="PRESS START TO START YOUR QUIZ";
+var correctAnswers = 0;
+var i=0;
+var j=0;
+var quizOver = false;
+var t;
+
+displayCurrentQuestion();
+document.getElementById("quiz-message").style.display = 'none';
+var n=function displayNext()
+{
+
+       document.getElementById('question').innerHTML=questions[i].question;
+       i++;
+
+       document.getElementById('next-btn').textContent="NEXT";
+
+}
+var ch=function ()
+{
+
+        t = document.getElementById('choice-list').innerHTML=questions[j].choices;
+        j++;
+
+}
+
+function displayCurrentQuestion()
+{
+    
+}
+
+function resetQuiz() {
+    currentQuestion = 0;
+    correctAnswers = 0;
+    hideScore();
+}
+function displayScore() {
+    document.getElementById("result").innerHTML = "you scored: " + correctAnswers + " out of: " + questions.length;
+    document.getElementById("result").style.display = 'block';
+}
+function hideScore() {
+    document.getElementById("result").style.display = 'none';
+}
