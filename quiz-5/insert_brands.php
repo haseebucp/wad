@@ -61,13 +61,7 @@ if (isset($_GET['insert_category']))
     </h1>
     <form action="" method="get">
         <select class="form-control" id="pro_brand" name="pro_brand">
-            <option>Select Brand</option>
-            <option>Apple</option>
-            <option>Samsung</option>
-            <option>Oppo</option>
-            <option>Dell</option>
-            <option>HP</option>
-            <option>Sony</option>
+           <?php getbrand(); ?>
         </select>
         <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-plus"></i> Insert Now </button>
     </form>

@@ -61,12 +61,7 @@ if (isset($_POST['insert_category']))
 </h1>
     <form action="" method="post">
     <select class="form-control" id="pro_cat" name="pro_cat">
-        <option>Select Category</option>
-        <option>Mobile</option>
-        <option>Laptop</option>
-        <option>Tablet</option>
-        <option>Watch</option>
-        <option>Camera</option>
+       <?php getcat(); ?>
     </select>
         <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-plus"></i> Insert Now </button>
     </form>
